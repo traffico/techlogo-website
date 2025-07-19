@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Home - TECHLOGO</title>
+</head>
+<body>
+   
+    <section class="fixed-top p-2 py-4 bg-white shadow-sm">
+        <div class="container-fluid">
+            <div class="row align-items-center text-center text-md-start">
+            
+                <!-- Menu Button -->
+                <div class="col-4 col-md-3 text-start">
+                    <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav" aria-controls="sideNav">
+                        <img src="/menu_24dp_BLACK_FILL0_wght400_GRAD0_opsz24.png" alt="Menu Icon">
+                    </button>
+                </div>
+
+                <!-- Logo centered on mobile -->
+                <div class="col-4 col-md-6 d-flex justify-content-center justify-content-md-center">
+                    <a href="index.html">
+                        <img src="/logo.png" alt="Logo" style="height: 50px;">
+                    </a>
+                </div>
+
+            <!-- Social Media Links -->
+                <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-end mt-3 mt-md-0 gap-4">
+                    <a href="#" class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas bg-light offcanvas-start" tabindex="-1" id="sideNav" aria-labelledby="sideNavLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="bg-light btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="h-100">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team.html">Team</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
+    <!-- Hero Section -->
+    <section class="bg-hero py-5">
+        <div class="container translate px-4">
+            <div class="row">
+                <div class="col-12 col-md-9 col-lg-5 rounded shadow px-4 py-5 " style="background-color: rgba(255, 255, 255, 0.281);">
+                    <h2><b>WORKS FOR YOU, EVEN WHEN</b> <br> YOU AREN'T WORKING</h2>
+                    <p class="text-white">
+                        We handle the details so you don’t have to.
+                        Enjoy seamless service and peace of mind—anytime, anywhere.
+                    </p>
+                    <span class="d-inline-flex flex-wrap gap-2 mt-4">
+                        <a href="">
+                            <button class="btn btn-primary text-white rounded-pill px-5 py-3">Get Started Now</button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-dark text-white rounded-pill px-5 py-3">Our Services</button>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turn Your Ideas Section -->
+     <section class="idea">
+        <div class="d-flex container justify-content-center align-items-center pb-5 px-5">
+            <div class="row">
+                <div class="col-12 col-md-6 pt-5 mt-5 h-100">
+                    <h1 class="fs-1 fw-light"><b class="fw-bold">TURN YOUR IDEAS</b> <br> TO LIVE WEB EXPERIENCES</h1>
+                    <p class="w-100"> 
+                       Your ideas deserve more than templates — we create custom web solutions that work. From concept to code, we bring your vision online with style and speed.
+                    </p>
+                    <button class="btn w-75 rounded-pill text-white bg-primary px-5 py-3 mt-3 scale">Learn More</button>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5 col-12 pt-5">
+                    <img class="w-75 img-fluid" src="/smiley-charming-man-holding-cup-coffee.jpg" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="services-section">
+        <div class="container py-5">
+            <h1 class="text-center"><b>SERVICES</b> WE ARE OFFERING</h1>
+            <p class="text-center w-75 pb-4 m-auto">We develop an individual integrated solution for your business and select a unique set of services for it, combining them with a single strategy and goal</p>
+            
+           <div class="container my-5">
+                 <div class="row g-5">
+                    <div class="col-12 col-md-4">
+                        <div class="rounded bg-white py-4 px-4 scale">
+                            <div class="py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-phone-vibrate p-3 bg-primary rounded-pill" viewBox="0 0 16 16">
+                                    <path d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                                    <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2M1.599 4.058a.5.5 0 0 1 .208.676A7 7 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A8 8 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208m12.802 0a.5.5 0 0 1 .676.208A8 8 0 0 1 16 8a8 8 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A7 7 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676M3.057 5.534a.5.5 0 0 1 .284.648A5 5 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A6 6 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284m9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8s-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8s-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648"/>
+                                </svg>
+                            </div>
+                            <h2 class="fs-5 fw-bold">Great Experiences</h2>
+                            <p class="mb-4">
+                                No matter the size or complexity of your project, our team brings the expertise and dedication needed to deliver outstanding results. We don’t just build solutions — we craft experiences that elevate your brand and drive real impact.
+                            </p>
+                            <span>
+                                <a href="">
+                                    READ MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                    </svg>
+                                </a>
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="rounded bg-white py-4 px-4 scale">
+                            <div class="py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-lightbulb p-3 bg-primary rounded-pill" viewBox="0 0 16 16">
+                                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                                </svg>  
+                            </div>
+                            <h2 class="fs-5 fw-bold">Digital Marketing</h2>
+                            <p class="mb-4">
+                               From strategy to execution, our experts craft data-driven marketing campaigns tailored to your goals. Whether you're launching a new brand or scaling an existing one, we help you connect with the right audience and drive measurable results.
+                            </p>
+                            <span>
+                                <a href="">
+                                    READ MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                    </svg>
+                                </a>
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="rounded bg-white py-4 px-4 scale">
+                            <div class="py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-gear p-3 bg-primary rounded-pill" viewBox="0 0 16 16">
+                                    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                                </svg>
+                            </div>
+                            <h2 class="fs-5 fw-bold">Consulting Services</h2>
+                            <p class="mb-4">
+                                We don’t offer one-size-fits-all advice. Our consultants work closely with you to understand your unique challenges and deliver tailored strategies that drive growth, efficiency, and long-term success.
+                            </p>
+                            <span>
+                                <a href="">
+                                    READ MORE
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                                    </svg>
+                                </a>
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+     </section>
+
+    <section class="bg-flexible_software">
+        <div class="container py-5 px-4">
+            <div class="row align-items-center">
+    
+                <!-- Text Section -->
+                <div class="col-12 col-md-8">
+                    <h1 class="fs-2 fw-bold">
+                        FLEXIBLE & RELIABLE <br><span class="fw-normal">SOFTWARE</span>
+                    </h1>
+                    <p class="mt-3">
+                        Article evident arrived express highest men did boy. Mistress sensible entirely am so. 
+                        Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. 
+                        Law others theirs passed but wishes. You day real less till dear read.
+                    </p>
+                </div>
+
+                <!-- Button Section -->
+                <div class="col-12 col-md-4 mt-4 mt-md-0 text-md-start text-center">
+                    <button class="btn btn-primary text-white rounded-pill px-5 py-3 border-0">
+                        Read More
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="review-section">
+        <h1 class="text-center pt-5 pb-4"><b>WHAT OUR</b> CLIENT'S SAY</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-5 my-2 p-4 translate"> 
+                    <div class="shadow-sm bg-white p-5 text-center">
+                        <div class="text-center py-4">
+                            <img class="rounded-pill" width="90px" height="90px" src="/pexels-christina-morillo-1181742.jpg" alt="">
+                        </div> 
+                        <h3>Nickol Parse</h3>
+                        <footer class="light-color">Working with this team was an absolute game-changer for our business. We came in with a rough idea, and they transformed it into a stunning, fully custom website that performs beautifully across all devices.</footer>
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 my-2 p-4 translate">
+                    <div class="shadow-sm bg-white p-5 text-center">
+                        <div class="text-center py-4">
+                            <img class="rounded-pill" width="90px" height="90px" src="/positive-business-woman-posing-camera-outdoors.jpg" alt="">
+                        </div>
+                        <h3>Nina Scavo</h3>
+                        <footer class="light-color">Their integrated approach blew us away. From strategy sessions to software deployment, the process was smooth, efficient, and tailored to our goals.</footer>
+                    </div>
+                </div>
+                
+                 <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="best-plans">
+        <div class="container text-center py-5">
+            <h1 class="my-5"><b>DISCOVER OUR</b> BEST PLANS</h1>
+            <div class="row">
+                <div class="col-12 col-md-4 p-4">
+                    <div class="p-3">
+                        <div class="bg-dark text-white py-3">
+                            <p>Basic</p>
+                        </div>
+                        <div class="bg-light pb-4 translate">
+                            <h2 class="py-2">$39.99</h2>
+                            <ul class="bg-light px-3">
+                                <li>Person Entrance</li>
+                                <li>Person Launch</li>
+                                <li>Hours Everyday</li>
+                                <li>Band Performance</li>
+                                <li>Day-Night Experience</li>
+                            </ul>
+                            <button class="btn btn-primary rounded-pill p-3">Buy Ticket</button>
+                        </div>      
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="p-3">
+                        <div class="bg-primary text-white py-3">
+                            <p>Standard</p>
+                        </div>
+                        <div class="bg-light pb-4 translate">
+                            <h2 class="py-2">$59.99</h2>
+                            <ul class="bg-light px-3">
+                                <li>Person Entrance</li>
+                                <li>Person Launch</li>
+                                <li>Hours Everyday</li>
+                                <li>Band Performance</li>
+                                <li>Day-Night Experience</li>
+                            </ul>
+                            <button class="btn btn-primary rounded-pill p-3">Buy Ticket</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-12 col-md-4 p-4">
+                    <div class="p-3">
+                        <div class="bg-dark text-white py-3">
+                            <p>Premium</p>
+                        </div>
+                        <div class="bg-light pb-4 translate">
+                            <h2 class="py-2">$79.99</h2>
+                            <ul class="bg-light px-3">
+                                <li>Person Entrance</li>
+                                <li>Person Launch</li>
+                                <li>Hours Everyday</li>
+                                <li>Band Performance</li>
+                                <li>Day-Night Experience</li>
+                            </ul>
+                            <button class="btn btn-primary rounded-pill p-3">Buy Ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="plan-suggestion">
+        <div class="container">
+            <div class="row text-white text-center m-auto">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h1>WE'LL SUGGEST THE PLAN</h1>
+                    <h1>THAT'S RIGHT FOR YOUR BUSINESS</h1>
+                    <p>We’ll help you choose the solution that fits your goals, budget, and growth potential — no fluff, just what works.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control rounded-0 p-2" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary rounded-0">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container pt-5 mb-5 text-center">
+            <h1 class="my-5"><b>HERE ARE SOME</b> OF OUR CLIENTS</h1>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <div class="bg-light p-5 scale">
+                    <img class="img-fluid" src="/black-logo-1.png" alt="">
+                </div>
+                <div class="bg-light p-5 scale">
+                    <img class="img-fluid" src="/black-logo-2_150.png" alt="">
+                </div>
+                <div class="bg-light p-5 scale">
+                    <img class="img-fluid" src="/black-logo-4.png" alt="">
+                </div>
+                <div class="bg-light p-5 scale">
+                    <img class="img-fluid" src="/black-logo-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-5 p-4">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 col-12 my-3">
+                    <img class="img-fluid" width="300px" src="/smiley-charming-man-holding-cup-coffee.jpg" alt="">
+                </div>
+                <div class="col-md-5 col-12">
+                    <img class="my-3" width="150px" src="/logo.png" alt="">
+                    <h1><b>CONTACT</b> INFO</h1>
+                    <p>
+                        We’re here to answer your questions, discuss your project, or provide support — reach out anytime.
+                    </p>
+                    <a href="" class="d-flex gap-2 translate">
+                        <span>
+                            <svg class="u-svg-content" viewBox="0 0 405.333 405.333" x="0px" y="0px" style="width: 1em; height: 1em;"><path d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752    c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64    C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32    c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"></path></svg>
+                        </span>
+                        <span>
+                            +1 (234) 567-8910
+                        </span>
+                    </a>
+                    <div class="mt-4">
+                        <button class="btn btn-primary rounded-pill px-5 py-3 border">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark py-5 text-white text-center mt-5">
+        <div>
+            <img width="150px" class="p-1 my-2" src="/logo.png" alt="">
+        </div>
+        <div>
+            <p>  &copy; 2025 TECHLOGO. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

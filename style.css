@@ -1,0 +1,152 @@
+
+
+body, *{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: ease-in 300ms;
+    scroll-behavior: smooth;
+}
+
+.bg-hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.055)), url('/pexels-burst-374820.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px;
+    min-height: 600px;
+    /* height: 70vh; */
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-color{
+    color: #999999;
+}
+
+/* .idea > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.idea {
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.idea .row {
+  min-height: 100%; /* ensures equal height on larger screens */
+}
+
+.idea h1 {
+  font-size: 2.5rem;
+}
+
+.idea p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.idea img {
+  object-fit: contain;
+}
+
+.services-section,
+.review-section
+{
+    background-color: #f2f2f2;
+    /* background-color: red; */
+    padding: 10px 50px;
+}
+
+.services-section p
+{
+    /* background-color: red; */
+    color: #999999 ;
+    font-weight: 200;
+}
+
+.bg-flexible_software{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.541)), url(/pexels-christina-morillo-1181715.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: fit-content;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bg-flexible_software p{
+    line-height: 30px;
+}
+
+.btn-primary:hover, 
+.btn-dark:hover{
+    background-color: white;
+    border: solid 1px white;
+    color: black !important;
+}
+
+.best-plans ul{
+    list-style: none;
+    color: #999999;
+    line-height: 30px;
+}
+
+.plan-suggestion{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://assets.nicepagecdn.com/11a8ddce/4092501/images/pexels-christina-morillo-1181435.jpg);
+    background-position: 50% 87.02%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form input, 
+.contact-form textarea{
+    padding-left: 10px;
+    color: #999999;
+    border: solid 1px #9999993d;
+    background-color: #99999913;
+    /* padding: 5px; */
+}
+
+.contact-form{
+    margin-bottom: 99px;
+    margin-top: 53px;
+}
+
+.contact-form h1{
+    margin-bottom: 42px;
+}
+
+.contact-form button{
+    padding: 23px 70px;
+}
+
+.label-spacing{
+    position: relative;
+    top: 8px;
+}
+
+.team1{
+    padding: 2px;
+}
+
+.translate:hover{
+    transition: transform ease-in 300ms;
+    transform: translateY(-4px);
+}
+
+.scale:hover{
+    transition: transform ease-in 300ms;
+    transform: scale(1.06);
+}
+
+
