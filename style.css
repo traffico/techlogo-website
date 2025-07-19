@@ -8,7 +8,7 @@ body, *{
 }
 
 .bg-hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.055)), url('/pexels-burst-374820.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.055)), url('pexels-burst-374820.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,7 +68,7 @@ body, *{
 }
 
 .bg-flexible_software{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.541)), url(/pexels-christina-morillo-1181715.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.541)), url('pexels-christina-morillo-1181715.jpg');
     background-position: center;
     background-repeat: no-repeat;
     min-height: fit-content;
